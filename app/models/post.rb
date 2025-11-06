@@ -5,4 +5,6 @@ class Post < ApplicationRecord
 
   validates :title,   presence: true, uniqueness: { case_sensitive: false }
   validates :content, presence: true
+
+  scope :recent, -> { order(created_at: :desc).limit(25) }
 end
