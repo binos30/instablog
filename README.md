@@ -1,24 +1,28 @@
-# README
+# Instablog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Created Badge](https://badges.pufler.dev/created/binos30/instablog)](https://badges.pufler.dev)
+[![Updated Badge](https://badges.pufler.dev/updated/binos30/instablog)](https://badges.pufler.dev)
+[![CI/CD](https://github.com/binos30/shopline/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/binos30/instablog/actions/workflows/ci.yml)
 
-Things you may want to cover:
+## Setup
 
-- Ruby version
+Prerequisites
 
-- System dependencies
+- [Ruby 3.4.7](https://github.com/rbenv/rbenv)
+- [PostgreSQL](https://www.postgresql.org/download/)
 
-- Configuration
+Create `.env` file at the root of the project directory. Copy the content of `.env.example` to `.env` then update the `username` and `password` based on your database credentials.
 
-- Database creation
+Install dependencies and setup database
 
-- Database initialization
+```bash
+bin/setup
+```
 
-- How to run the test suite
+Start local web server
 
-- Services (job queues, cache servers, search engines, etc.)
+```bash
+bin/dev
+```
 
-- Deployment instructions
-
-- ...
+Go to [http://localhost:3000](http://localhost:3000)
