@@ -2,7 +2,7 @@
 
 [![Created Badge](https://badges.pufler.dev/created/binos30/instablog)](https://badges.pufler.dev)
 [![Updated Badge](https://badges.pufler.dev/updated/binos30/instablog)](https://badges.pufler.dev)
-[![CI/CD](https://github.com/binos30/shopline/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/binos30/instablog/actions/workflows/ci.yml)
+[![CI](https://github.com/binos30/instablog/actions/workflows/ci.yml/badge.svg)](https://github.com/binos30/instablog/actions/workflows/ci.yml)
 
 ## Setup
 
