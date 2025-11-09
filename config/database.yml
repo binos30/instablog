@@ -23,7 +23,7 @@ default: &default
 development:
   primary: &primary_development
     <<: *default
-    database: blog_development
+    database: instablog_development
 
   # Optional separate connections that default to the same database in development
   cache:
@@ -40,7 +40,7 @@ development:
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: blog
+  #username: instablog
 
   # The password associated with the PostgreSQL role (username).
   #password:
@@ -68,7 +68,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: blog_test
+  database: instablog_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -99,18 +99,18 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: blog_production
-    username: blog
-    password: <%= ENV["BLOG_DATABASE_PASSWORD"] %>
+    database: instablog_production
+    username: instablog
+    password: <%= ENV["INSTABLOG_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
-    database: blog_production_cache
+    database: instablog_production_cache
     migrations_paths: db/cache_migrate
   queue:
     <<: *primary_production
-    database: blog_production_queue
+    database: instablog_production_queue
     migrations_paths: db/queue_migrate
   cable:
     <<: *primary_production
-    database: blog_production_cable
+    database: instablog_production_cable
     migrations_paths: db/cable_migrate
