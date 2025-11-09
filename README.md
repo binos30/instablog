@@ -19,6 +19,8 @@ Install dependencies and setup database
 bin/setup
 ```
 
+Run `lefthook install` to sync the git hooks
+
 Start local web server
 
 ```bash
