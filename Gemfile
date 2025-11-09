@@ -59,9 +59,17 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   gem "dotenv-rails"
+
+  # Provides a comprehensive suite of tools for Ruby programming: intellisense, diagnostics, inline documentation,
+  # and type checking [https://github.com/castwide/solargraph]
+  gem "solargraph", require: false
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+
+  # A normaliser/beautifier for HTML that also understands embedded Ruby. Ideal for tidying up Rails templates
+  # [https://github.com/threedaymonk/htmlbeautifier]
+  gem "htmlbeautifier", require: false
 end
